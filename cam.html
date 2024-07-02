@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./assets/target/targets.mind; maxTrack: 1" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <a-asset-item id="nick" src="./assets/3d-model/nick/scene.gltf"></a-asset-item>
+        <a-asset-item id="spiderman" src="./assets/3d-model/spiderman/scene.gltf"></a-asset-item>
+        <a-asset-item id="groot" src="./assets/3d-model/groot/scene.gltf"></a-asset-item>
+        <a-asset-item id="loki" src="./assets/3d-model/loki/scene.gltf"></a-asset-item>        
+        <a-asset-item id="shield" src="./assets/3d-model/shield/scene.gltf"></a-asset-item> 
+        <a-asset-item id="captainmarvel" src="./assets/3d-model/captainmarvel/scene.gltf"></a-asset-item>
+        <a-asset-item id="hulk" src="./assets/3d-model/hulk/scene.gltf"></a-asset-item>
+        <a-asset-item id="ironman" src="./assets/3d-model/ironman/scene.gltf"></a-asset-item>
+        <a-asset-item id="thanos" src="./assets/3d-model/thanos/scene.gltf"></a-asset-item>
+        <a-asset-item id="falcon" src="./assets/3d-model/falcon/scene.gltf"></a-asset-item>             
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model src="#nick" rotation="0 0 0" position="0 0.01 0" scale="0.2 0.2 0.2"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model src="#spiderman" rotation="0 0 0" position="0 -0.5 0" scale="0.2 0.2 0.2"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model src="#groot" rotation="0 0 0" position="0.08 0.02 0" scale="1 1 1"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model src="#loki" rotation="0 0 0" position="0.02 -0.19 0" scale="0.75 0.75 0.75"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model src="#shield" rotation="0 1 0" position="0 0 0" scale="0.05 0.05 0.05"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-gltf-model src="#captainmarvel" rotation="0 0 0" position="0 0 0" scale="0.3 0.3 0.3"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-gltf-model src="#hulk" rotation="0 0 0" position="0 0.01 0" scale="0.5 0.5 0.5"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-gltf-model src="#ironman" rotation="0 0 0" position="0 0 0" scale="0.2 0.2 0.2"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-gltf-model src="#thanos" rotation="0 0 0" position="0 0 0" scale="1 1 1"></a-gltf-model>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-gltf-model src="#falcon" rotation="0 0 0" position="0.02 -0.19 0" scale="0.75 0.75 0.75"></a-gltf-model>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

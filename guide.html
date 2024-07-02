@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AR - Hazel | Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/tiny-slider.css">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/img/avengers.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .splash p {
+            font-size: 24px;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        .header_hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('assets/img/marvel.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+
+        .header_hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+        }
+
+        .header_hero .hero_content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header_hero h2, .header_hero p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AR - Hazel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="guide.html">Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marker.html">Marker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arcam.html">AR Cam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="guide" class="header_area">
+        <div class="header_hero">
+            <div class="hero_content">
+                <h2 class="hero_title">Guide for Augmented Reality</h2>
+                <p>1.Allow Camera Access
+                    When you first launch the application, you will be prompted to allow access to your device's camera. This permission is necessary for the AR features to function properly. Please grant the access.</p>.
+                <p>2.Download Image Markers
+                    Navigate to the "Marker" page within the app to find and download the image markers required for the AR experience. These markers are specific images that the app uses to trigger the AR content.</p>    
+                <p>3.Print or Display Image Markers
+                    You can either print the downloaded markers or display them on another screen. Ensure that the markers are clear and well-lit for optimal performance.</p>
+                <p>4.Point Your Camera at the Marker
+                    Open the AR view within the app and point your device's camera at one of the image markers. The AR characters from Final Fantasy VII will appear overlaid on the marker in real-time, bringing the characters into your environment.</p>
+                <a href="index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
